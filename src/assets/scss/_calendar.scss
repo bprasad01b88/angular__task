@@ -1,0 +1,28 @@
+$orange-color: #ff5722;
+$pink-color: #d81b60;
+$red-color: #b71c1c;
+$purple-color: #673ab7;
+$backweek-color: #fce4ec;
+$backleave-color: #ffebee;
+$backholiday-color: #f6f0ff;
+$progressblue-color: #0d47a1;
+$progressyellow-color: #ff8f00;
+$day-color: #98a0a6;
+
+@mixin fonts {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+$weights: (
+  "normal": 400,
+  "semi-bold": 500,
+  "bold": 600,
+);
+
+$fonts-size: (
+  "small": 0.75rem,
+  "medium": 0.875rem,
+  "large": 1.125rem,
+  "normal": 0.8125rem,
+);

@@ -1,0 +1,222 @@
+@import "../../assets/scss/calendar";
+
+@function weight($font-weight) {
+  @return map-get($weights, $font-weight);
+}
+
+@function fontSize($font-size) {
+  @return map-get($fonts-size, $font-size);
+}
+ul {
+  padding: 0 0.9375rem 0 0;
+}
+.calendar {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(7, minmax(8.125rem, 1fr));
+  grid-template-rows: 3.125rem;
+  grid-auto-rows: 7.375rem;
+  overflow: auto;
+
+  &-container {
+    width: 100%;
+  }
+}
+
+.day {
+  border-bottom: 1px solid rgba(166, 168, 179, 0.12);
+  border-right: 1px solid rgba(166, 168, 179, 0.12);
+  text-align: right;
+  padding: 0.5rem 0.3125rem;
+  letter-spacing: 1px;
+  font-size: fontSize(small);
+  box-sizing: border-box;
+  color: $day-color;
+  position: relative;
+  pointer-events: none;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:nth-of-type(7n + 7) {
+    border-right: 0;
+  }
+
+  &:nth-of-type(n + 1):nth-of-type(-n + 7) {
+    grid-row: 2;
+  }
+
+  &:nth-of-type(n + 8):nth-of-type(-n + 14) {
+    grid-row: 3;
+  }
+
+  &:nth-of-type(n + 15):nth-of-type(-n + 21) {
+    grid-row: 4;
+  }
+
+  &:nth-of-type(n + 22):nth-of-type(-n + 28) {
+    grid-row: 5;
+  }
+
+  &:nth-of-type(n + 29):nth-of-type(-n + 35) {
+    grid-row: 6;
+  }
+
+  &:nth-of-type(7n + 1) {
+    grid-column: 1/1;
+  }
+
+  &:nth-of-type(7n + 2) {
+    grid-column: 2/2;
+  }
+
+  &:nth-of-type(7n + 3) {
+    grid-column: 3/3;
+  }
+
+  &:nth-of-type(7n + 4) {
+    grid-column: 4/4;
+  }
+
+  &:nth-of-type(7n + 5) {
+    grid-column: 5/5;
+  }
+
+  &:nth-of-type(7n + 6) {
+    grid-column: 6/6;
+  }
+  &:nth-of-type(7n + 7) {
+    grid-column: 7/7;
+  }
+
+  &-name {
+    @include fonts;
+    font-weight: weight(bold);
+    font-size: fontSize(medium);
+    text-align: right;
+    padding-right: 0.3125rem;
+    letter-spacing: 0.1px;
+    color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(166, 168, 179, 0.12);
+    line-height: 3.125rem;
+  }
+
+  .number {
+    @include fonts;
+    position: absolute;
+    right: 0.3125rem;
+    top: 0.3125rem;
+    font-weight: weight(normal);
+    font-size: fontSize(medium);
+    line-height: 1.5rem;
+    letter-spacing: 0.1px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .uniquenum {
+    @include fonts;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: $orange-color;
+    border-radius: 0.5rem;
+    font-weight: weight(semi-bold);
+    font-size: fontSize(medium);
+    line-height: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+  }
+  .monthnum {
+    @include fonts;
+    width: 1rem;
+    height: 1.5rem;
+    font-weight: weight(normal);
+    font-size: fontSize(medium);
+    line-height: 1.5rem;
+    text-align: right;
+    letter-spacing: 0.1px;
+    color: rgba(0, 0, 0, 0.38);
+  }
+  .weekoff {
+    @include fonts;
+    font-weight: weight(bold);
+    font-size: fontSize(medium);
+    line-height: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: $pink-color;
+    background: $backweek-color;
+    border-radius: 0.5rem;
+    width: 10.5625rem;
+    padding: 0.625rem 1.25rem;
+    text-align: center;
+  }
+
+  .leave {
+    @include fonts;
+    font-weight: weight(bold);
+    font-size: fontSize(medium);
+    line-height: 1.5rem;
+    letter-spacing: 0.1px;
+    text-align: center;
+    padding: 0.625rem 1.25rem;
+    width: 10.5625rem;
+    color: $red-color;
+    background: $backleave-color;
+    border-radius: 0.5rem;
+  }
+  .holiday {
+    @include fonts;
+    font-weight: weight(bold);
+    font-size: fontSize(medium);
+    line-height: 1.125rem;
+    text-align: center !important;
+    letter-spacing: 0.1px;
+    color: $purple-color;
+    background: $backholiday-color;
+    border-radius: 0.5rem;
+    width: 10.5625rem;
+    padding: 0.3125rem 0.625rem;
+    text-align: center;
+
+    span {
+      @include fonts;
+      font-weight: weight(normal);
+      font-size: fontSize(small);
+      line-height: 1rem;
+      letter-spacing: 0.25px;
+      color: rgba(0, 0, 0, 0.87);
+    }
+  }
+  .progress {
+    display: flex;
+    width: 100%;
+    gap: 0.125rem;
+    padding-bottom: 10px;
+    list-style-type: none;
+  }
+  .progress .progress_inner {
+    border-radius: 0.3125rem;
+  }
+  .progress .progress_inner.left {
+    background: $progressblue-color;
+    color: $progressblue-color;
+  }
+  .progress .progress_inner.right {
+    background: $progressyellow-color;
+    color: $progressyellow-color;
+  }
+  .event-item {
+    list-style-type: none;
+    margin-top: 1.875rem;
+    text-align: justify;
+    li {
+      @include fonts;
+      font-weight: weight(normal);
+      font-size: fontSize(small);
+      line-height: 1rem;
+      letter-spacing: 0.25px;
+      color: rgba(0, 0, 0, 0.87);
+    }
+  }
+}

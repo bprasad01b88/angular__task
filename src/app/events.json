@@ -1,0 +1,233 @@
+[
+    {
+        "start" : "2022-10-31",
+        "end" : "2022-10-31",
+        "weekOff" : "Weekly Off",
+        "month" : "month"
+    },
+    {
+        "start" : "2022-11-01",
+        "end" : "2022-11-01",
+        "fEntry" : "First Entry - 10:42 AM",
+        "lEntry" : "Last Entry - 09:28 PM",
+        "workedFor" : "Worked For - 07:52:18",
+        "blue" : "20%",
+        "yellow" : "80%"
+    },
+    {
+        "start" : "2022-11-02",
+        "end" : "2022-11-02",
+        "fEntry" : "First Entry - 10:04 AM",
+        "lEntry" : "Last Entry - 09:04 PM",
+        "workedFor" : "Worked For - 08:06:47",
+        "blue" : "30%",
+        "yellow" : "70%"
+    },
+    {
+        "start" : "2022-11-03",
+        "end" : "2022-11-03",
+        "fEntry" : "First Entry - 10:25 AM",
+        "lEntry" : "Last Entry - 08:17 PM",
+        "workedFor" : "Worked For - 08:26:13",
+        "blue" : "10%",
+        "yellow" : "90%"
+    },
+    {
+        "start" : "2022-11-04",
+        "end" : "2022-11-04",
+        "fEntry" : "First Entry - 10:08 AM",
+        "lEntry" : "Last Entry - 08:07 PM",
+        "workedFor" : "Worked For - 05:29:19",
+        "blue" : "75%",
+        "yellow" : "25%"
+    },
+    {
+        "start" : "2022-11-05",
+        "end" : "2022-11-05",
+        "fEntry" : "First Entry - 10:23 AM",
+        "lEntry" : "Last Entry - 08:33 PM",
+        "workedFor" : "Worked For - 07:32:56",
+        "yellow" : "100%"
+    },
+    {
+        "start" : "2022-11-06",
+        "end" : "2022-11-06",
+        "weekOff" :"Weekly Off"
+    },
+    {
+        "start" : "2022-11-07",
+        "end" : "2022-11-07",
+        "weekOff" :"Weekly Off"
+    },
+    {
+        "start" : "2022-11-08",
+        "end" : "2022-11-08",
+        "leave" : "Leave"
+    },
+    {
+        "start" : "2022-11-09",
+        "end" : "2022-11-09",
+        "leave" : "Leave"
+    },
+    {
+        "start" : "2022-11-10",
+        "end" : "2022-11-10",
+        "fEntry" : "First Entry - 10:05 AM",
+        "lEntry" : "Last Entry - 08:21 PM",
+        "workedFor" : "Worked For - 06:38:21",
+        "blue" : "5%",
+        "yellow" : "95%"
+    },
+    {
+        "start" : "2022-11-11",
+        "end" : "2022-11-11",
+        "fEntry" : "First Entry - 10:27 AM",
+        "lEntry" : "Last Entry - 07:59 PM",
+        "workedFor" : "Worked For - 08:46:16",
+        "blue" : "50%",
+        "yellow" : "50%"
+    },
+    {
+        "start" : "2022-11-12",
+        "end" : "2022-11-12",
+        "fEntry" : "First Entry - 10:06 AM",
+        "lEntry" : "Last Entry - 09:31 PM",
+        "workedFor" : "Worked For - 07:46:31",
+        "blue" : "90%",
+        "yellow" : "10%"
+    },
+    {
+        "start" : "2022-11-13",
+        "end" : "2022-11-13",
+        "weekOff" :"Weekly Off"
+    },
+    {
+        "start" : "2022-11-14",
+        "end" : "2022-11-14",
+        "holiday" :"Holiday",
+        "independence" :"Independence Day"
+    },
+    {
+        "start" : "2022-11-15",
+        "end" : "2022-11-15",
+        "fEntry" : "First Entry - 11:05 AM",
+        "lEntry" : "Last Entry - 06:56 PM",
+        "workedFor" : "Worked For - 07:18:41",
+        "blue" : "70%",
+        "yellow" : "30%"
+
+    },
+    {
+        "start" : "2022-11-16",
+        "end" : "2022-11-16",
+        "fEntry" : "First Entry - 10:14 AM",
+        "lEntry" : "Last Entry - 08:01 PM",
+        "workedFor" : "Worked For - 07:38:01",
+        "blue" : "1%",
+        "yellow" : "99%"
+    },
+    {
+        "start" : "2022-11-17",
+        "end" : "2022-11-17",
+        "fEntry" : "First Entry - 10:09 AM",
+        "lEntry" : "Last Entry - 09:37 PM",
+        "workedFor" : "Worked For - 07:38:01",
+        "yellow" : "100%"
+    },
+    {
+        "start" : "2022-11-18",
+        "end" : "2022-11-18",
+        "fEntry" : "First Entry - 10:26 AM",
+        "lEntry" : "Last Entry - 08:42 PM",
+        "workedFor" : "Worked For - 08:04:51",
+        "blue" : "95%",
+        "yellow" : "5%"
+    },
+    {
+        "start" : "2022-11-19",
+        "end" : "2022-11-19",
+        "fEntry" : "First Entry - 11:00 AM",
+        "lEntry" : "Last Entry - 07:57 PM",
+        "workedFor" : "Worked For - 07:19:57",
+        "unique" : "unique",
+        "blue" : "40%",
+        "yellow" : "60%"
+    },
+    {
+        "start" : "2022-11-20",
+        "end" : "2022-11-20",
+        "weekOff" :"Weekly Off"
+    },
+    {
+        "start" : "2022-11-21",
+        "end" : "2022-11-21",
+        "weekOff" :"Weekly Off"
+    },
+    {
+        
+        "start" : "2022-11-22",
+        "end" : "2022-11-22"
+    },
+    {
+        
+        "start" : "2022-11-23",
+        "end" : "2022-11-23"
+    },{
+        
+        "start" : "2022-11-24",
+        "end" : "2022-11-24"
+    },{
+        
+        "start" : "2022-11-25",
+        "end" : "2022-11-25"
+    },
+    {
+        
+        "start" : "2022-11-26",
+        "end" : "2022-11-26"
+    },
+    {
+        "start" : "2022-11-27",
+        "end" : "2022-11-27",
+        "weekOff" :"Weekly Off"
+    },
+    {
+        "start" : "2022-11-28",
+        "end" : "2022-11-28",
+        "weekOff" :"Weekly Off"
+    },
+    {
+        
+        "start" : "2022-11-29",
+        "end" : "2022-11-29"
+    },
+    {
+        
+        "start" : "2022-11-30",
+        "end" : "2022-11-30"
+    },
+    {
+        
+        "start" : "2022-12-01",
+        "end" : "2022-12-01",
+        "month" : "month"
+    },
+    {
+        
+        "start" : "2022-12-02",
+        "end" : "2022-12-02",
+        "month" : "month"
+    },
+    {
+        
+        "start" : "2022-12-03",
+        "end" : "2022-12-03",
+        "month" : "month"
+    },
+    {
+        
+        "start" : "2022-12-04",
+        "end" : "2022-12-04",
+        "month" : "month"
+    }
+]

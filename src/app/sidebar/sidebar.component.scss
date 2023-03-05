@@ -1,0 +1,151 @@
+@import "../../assets/scss/config";
+
+@function color($rgba-prop) {
+  @return map-get($color-property, $rgba-prop);
+}
+
+.user__area {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+
+  .avatar {
+    @include position;
+    left: 5%;
+    right: 0%;
+    top: 3%;
+    bottom: 0%;
+
+    background: url("../../assets/images/User02.png");
+    background-repeat: no-repeat;
+  }
+
+  .user__details {
+    margin-left: 5%;
+  }
+
+  .user__name {
+    @include fonts;
+    width: 8.375rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.15px;
+    color: color(headingColor);
+  }
+
+  .user__email {
+    @include fonts;
+    width: 7.4rem;
+    height: 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.25px;
+    color: color(commonColor);
+  }
+}
+
+.date__area {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+
+  .text__area {
+    @include fonts;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.15px;
+
+    color: color(headingColor);
+  }
+
+  .arrow img {
+    border: 1px solid color(commonColor);
+    padding: 0.125rem;
+    border-radius: 30%;
+  }
+}
+
+.heading_entry {
+  h6 {
+    @include position;
+    @include fonts;
+    width: 2.4rem;
+    height: 1rem;
+    left: 1.875rem;
+    top: 6.5625rem;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.25px;
+    color: color(commonColor);
+  }
+}
+.entries {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1.75rem;
+  margin-top: 3.12rem;
+
+  img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  span {
+    @include fonts;
+    font-size: 1rem;
+    letter-spacing: 0.15px;
+    color: color(headingColor);
+  }
+
+  .entries__ml {
+    margin-left: 0.625rem;
+  }
+}
+
+.unclassified__entries {
+  margin-top: 3px;
+}
+
+.schedule {
+  h6 {
+    @include position;
+    width: 3.18rem;
+    height: 1rem;
+    left: 1.87rem;
+    top: 12.81rem;
+
+    @include fonts;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+
+    letter-spacing: 0.25px;
+    color: color(commonColor);
+  }
+}
+
+.achievements {
+  h6 {
+    @include position;
+    @include fonts;
+    width: 4.93rem;
+    height: 1rem;
+    left: 1.87rem;
+    top: 22.5rem;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.25px;
+    color: color(commonColor);
+  }
+
+  .achivement__section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .timing {
+    @include fonts;
+    font-size: 1rem;
+    font-weight: 600 !important;
+    text-align: right;
+    letter-spacing: 0.15px;
+    color: color(headingColor);
+  }
+}

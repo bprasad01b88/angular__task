@@ -1,0 +1,15 @@
+@mixin fonts{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@mixin position{
+    position: absolute;
+}
+
+$color-property : (
+    "headingColor" : rgba(0, 0, 0, 0.87),
+    "commonColor" : rgba(0, 0, 0, 0.6),
+)

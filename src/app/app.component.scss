@@ -1,0 +1,25 @@
+.container {
+  max-width: 1664px;
+}
+
+.sidebar__container {
+  position: absolute;
+  width: 320px;
+  height: 944px;
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 16px 16px 0px;
+}
+
+.main__content {
+  position: absolute;
+  width: 1010px;
+  height: 920px;
+  left: 344px;
+  top: 0px;
+
+  background: #ffffff;
+}

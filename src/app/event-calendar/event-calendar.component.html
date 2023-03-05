@@ -1,0 +1,40 @@
+<div class="calendar-container">
+  <div class="calendar">
+    <span class="day-name">Sun</span><span class="day-name">Mon</span
+    ><span class="day-name">Tue</span><span class="day-name">Wed</span
+    ><span class="day-name">Thu</span><span class="day-name">Fri</span
+    ><span class="day-name">Sat</span>
+    <div class="day" *ngFor="let item of events">
+      <div
+        [ngClass]="{
+          number: item.start === item.start,
+          uniquenum: item.unique === 'unique',
+          monthnum: item.month === 'month'
+        }"
+      >
+        {{ item.start | date : "d" }}
+      </div>
+
+      <section *ngIf="item.weekOff" class="weekoff">{{ item.weekOff }}</section>
+      <section *ngIf="item.leave" class="leave">{{ item.leave }}</section>
+      <section *ngIf="item.holiday" class="holiday">
+        {{ item.holiday }} <span>{{ item.independence }} </span>
+      </section>
+      <section *ngIf="item.workedFor" class="events--list">
+        <ul class="event-item">
+          <li>{{ item.fEntry }}</li>
+          <li>{{ item.lEntry }}</li>
+          <li>{{ item.workedFor }}</li>
+        </ul>
+        <div class="progress">
+          <li class="progress_inner left" [style.flex]="item.blue">
+            {{ item.blue }}
+          </li>
+          <li class="progress_inner right" [style.flex]="item.yellow">
+            {{ item.yellow }}
+          </li>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
