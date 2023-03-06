@@ -4,6 +4,7 @@
   @return map-get($color-property, $rgba-prop);
 }
 
+// user--details section
 .user__area {
   display: flex;
   justify-content: space-around;
@@ -43,6 +44,7 @@
   }
 }
 
+// date--details section
 .date__area {
   display: flex;
   justify-content: space-around;
@@ -56,13 +58,9 @@
 
     color: color(headingColor);
   }
-
-  .arrow img {
-    border: 1px solid color(commonColor);
-    padding: 0.125rem;
-    border-radius: 30%;
-  }
 }
+
+// Entries--Details Section
 
 .heading_entry {
   h6 {
@@ -101,9 +99,56 @@
   }
 }
 
-.unclassified__entries {
-  margin-top: 3px;
+.checkbox__grp {
+  margin-top: 2.625rem;
 }
+
+.unclassified {
+  @include entry__wrapper;
+  margin-top: 0.5rem;;
+
+  .entry__left {
+    @include entry__left;
+  }
+}
+
+.checkImg {
+  width: 1.2494rem;
+  height: 1.25rem;
+  margin-left: 0.3125rem;
+}
+
+.classified {
+  @include entry__wrapper;
+
+  .entry__left {
+    @include entry__left;
+  }
+}
+
+.classified > input {
+  @include checkbox__input;
+  background-color: $classified-color;
+}
+
+.classified > input:checked + span::before {
+  @include checkbox__checked;
+}
+
+.unclassified > input {
+  @include checkbox__input;
+  background-color: $unclassified-color;
+}
+
+.unclassified > input:checked + span::before {
+  @include checkbox__checked;
+}
+
+.unclassified__entries {
+  margin-top: 0.1875rem;
+}
+
+// Schedule--Detail Section
 
 .schedule {
   h6 {
@@ -111,7 +156,7 @@
     width: 3.18rem;
     height: 1rem;
     left: 1.87rem;
-    top: 12.81rem;
+    top: 13.5rem;
 
     @include fonts;
     font-size: 0.75rem;
@@ -122,6 +167,76 @@
   }
 }
 
+.schedule__grp {
+  margin-top: 3.125rem;
+
+  .schedule__ml {
+    margin-left: 0.5rem;
+    margin-top: 0.125rem;
+    @include fonts;
+    font-size: 1rem;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+}
+
+.extraWork {
+  @include entry__wrapper;
+}
+
+.extraWork > input {
+  @include checkbox__input;
+  background-color: $extraworking-color;
+}
+
+.extraWork > input:checked + span::before {
+  @include checkbox__checked;
+}
+
+.weeklyOff {
+  @include entry__wrapper;
+  margin-top: 0.5rem;;
+}
+
+.weeklyOff > input {
+  @include checkbox__input;
+  background-color: $weeklyoff-color;
+}
+
+.weeklyOff > input:checked + span::before {
+  @include checkbox__checked;
+}
+
+.holiday {
+  @include entry__wrapper;
+  margin-top: 0.5rem;;
+}
+
+.holiday > input {
+  @include checkbox__input;
+  background-color: $holiday-color;
+}
+
+.holiday > input:checked + span::before {
+  @include checkbox__checked;
+}
+
+.leave {
+  @include entry__wrapper;
+  margin-top: 0.5rem;;
+}
+
+.leave > input {
+  @include checkbox__input;
+  background-color: $leave-color;
+}
+
+.leave > input:checked + span::before {
+  @include checkbox__checked;
+}
+
+// Achievement--detail Section
+
 .achievements {
   h6 {
     @include position;
@@ -129,7 +244,7 @@
     width: 4.93rem;
     height: 1rem;
     left: 1.87rem;
-    top: 22.5rem;
+    top: 24.5rem;
     font-size: 0.75rem;
     line-height: 1.5rem;
     letter-spacing: 0.25px;
@@ -147,5 +262,9 @@
     text-align: right;
     letter-spacing: 0.15px;
     color: color(headingColor);
+  }
+
+  .unclassified__entries{
+    margin-top: 0.5rem;;
   }
 }

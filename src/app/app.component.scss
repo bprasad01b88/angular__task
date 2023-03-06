@@ -1,25 +1,25 @@
 .container {
-  max-width: 1664px;
+  max-width: 104rem;
 }
 
 .sidebar__container {
   position: absolute;
-  width: 320px;
-  height: 944px;
-  left: 0px;
-  top: 0px;
+  width: 20rem;
+  height: 59rem;
+  left: 0rem;
+  top: 0rem;
 
   background: #ffffff;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-  border-radius: 0px 16px 16px 0px;
+  box-shadow: 0rem 0rem 2.5rem rgba(0, 0, 0, 0.15);
+  border-radius: 0rem 1rem 1rem 0rem;
 }
 
 .main__content {
   position: absolute;
-  width: 1010px;
-  height: 920px;
-  left: 344px;
-  top: 0px;
+  width: 63.125rem;
+  height: 59rem;
+  left: 21.5rem;
+  top: 0rem;
 
   background: #ffffff;
 }

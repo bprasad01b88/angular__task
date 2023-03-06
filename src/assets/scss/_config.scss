@@ -1,15 +1,58 @@
-@mixin fonts{
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
+$classified-color: #0d47a1;
+$unclassified-color: #ff8f00;
+$extraworking-color: #1b5e20;
+$weeklyoff-color: #d81b60;
+$holiday-color: #673ab7;
+$leave-color: #b71c1c;
+
+@mixin fonts {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
-@mixin position{
-    position: absolute;
+@mixin position {
+  position: absolute;
 }
 
-$color-property : (
-    "headingColor" : rgba(0, 0, 0, 0.87),
-    "commonColor" : rgba(0, 0, 0, 0.6),
-)
+$color-property: (
+  "headingColor": rgba(0, 0, 0, 0.87),
+  "commonColor": rgba(0, 0, 0, 0.6),
+);
+
+@mixin entry__wrapper {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  left: 1.75rem;
+}
+
+@mixin checkbox__input {
+  height: 1.25rem;
+  width: 1.2494rem;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+@mixin checkbox__checked {
+  content: "\2713";
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  position: absolute;
+  left: 0.5rem;
+  top: 0rem;
+}
+
+@mixin entry__left {
+  margin-left: 0.3125rem;
+  @include fonts;
+  font-size: 1rem;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
