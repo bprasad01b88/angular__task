@@ -22,8 +22,13 @@
 <div class="heading_entry">
   <h6>Entries</h6>
   <div class="checkbox__grp">
-    <div class="classified">
-      <input type="checkbox" checked />
+    <label class="classified">
+      <input
+        type="checkbox"
+        (click)="filterBYentries('blue')"
+        id="blue"
+        [checked]="selectedEntry.includes('blue')"
+      />
       <span></span>
       <img
         src="../../assets/images/note-2.png"
@@ -31,9 +36,14 @@
         class="entries__ml checkImg"
       />
       <span class="entry__left">Classified Entries</span>
-    </div>
-    <div class="unclassified">
-      <input type="checkbox" checked />
+    </label>
+    <label class="unclassified">
+      <input
+        type="checkbox"
+        (click)="filterBYentries('yellow')"
+        id="yellow"
+        [checked]="selectedEntry.includes('yellow')"
+      />
       <span></span>
       <img
         src="../../assets/images/union.png"
@@ -41,7 +51,7 @@
         class="entries__ml checkImg"
       />
       <span class="entry__left">Unclassified Entries</span>
-    </div>
+    </label>
   </div>
 </div>
 
@@ -52,18 +62,33 @@
       <input type="checkbox" checked />
       <span class="schedule__ml">Extra Working Day</span>
     </div>
-    <div class="weeklyOff">
-      <input type="checkbox" checked />
+    <label class="weeklyOff">
+      <input
+        type="checkbox"
+        (click)="filterByWeeks('Wo')"
+        id="Wo"
+        [checked]="selectedWorking.includes('Wo')"
+      />
       <span class="schedule__ml">Weekly Off</span>
-    </div>
-    <div class="holiday">
-      <input type="checkbox" checked />
+    </label>
+    <label class="holiday">
+      <input
+        type="checkbox"
+        (click)="filterByLeaves('holiday')"
+        id="holiday"
+        [checked]="selectedLeave.includes('holiday')"
+      />
       <span class="schedule__ml">Holiday</span>
-    </div>
-    <div class="leave">
-      <input type="checkbox" checked />
+    </label>
+    <label class="leave">
+      <input
+        type="checkbox"
+        (click)="filterByLeaves('leave')"
+        id="leave"
+        [checked]="selectedLeave.includes('leave')"
+      />
       <span class="schedule__ml">Leaves</span>
-    </div>
+    </label>
   </div>
 </div>
 

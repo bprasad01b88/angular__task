@@ -14,11 +14,18 @@
       >
         {{ item.start | date : "d" }}
       </div>
-
-      <section *ngIf="item.weekOff" class="weekoff">{{ item.weekOff }}</section>
-      <section *ngIf="item.leave" class="leave">{{ item.leave }}</section>
-      <section *ngIf="item.holiday" class="holiday">
-        {{ item.holiday }} <span>{{ item.independence }} </span>
+      <section *ngIf="showSchedule === 'all' || showSchedule === 'Wo'">
+        <section *ngIf="item.weekOff" class="weekoff">
+          {{ item.weekOff }}
+        </section>
+      </section>
+      <section *ngIf="showLeaves === 'all' || showLeaves === 'leave'">
+        <section *ngIf="item.leave" class="leave">{{ item.leave }}</section>
+      </section>
+      <section *ngIf="showLeaves === 'all' || showLeaves === 'holiday'">
+        <section *ngIf="item.holiday" class="holiday">
+          {{ item.holiday }} <span>{{ item.independence }} </span>
+        </section>
       </section>
       <section *ngIf="item.workedFor" class="events--list">
         <ul class="event-item">
@@ -27,10 +34,18 @@
           <li>{{ item.workedFor }}</li>
         </ul>
         <div class="progress">
-          <li class="progress_inner left" [style.flex]="item.blue">
+          <li
+            *ngIf="showEntry === 'all' || showEntry === 'blue'"
+            class="progress_inner left"
+            [style.width]="item.blue"
+          >
             {{ item.blue }}
           </li>
-          <li class="progress_inner right" [style.flex]="item.yellow">
+          <li
+            *ngIf="showEntry === 'all' || showEntry === 'yellow'"
+            class="progress_inner right"
+            [style.width]="item.yellow"
+          >
             {{ item.yellow }}
           </li>
         </div>

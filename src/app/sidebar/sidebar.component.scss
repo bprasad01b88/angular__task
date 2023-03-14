@@ -105,7 +105,7 @@
 
 .unclassified {
   @include entry__wrapper;
-  margin-top: 0.5rem;;
+  margin-top: 0.5rem;
 
   .entry__left {
     @include entry__left;
@@ -195,7 +195,7 @@
 
 .weeklyOff {
   @include entry__wrapper;
-  margin-top: 0.5rem;;
+  margin-top: 0.5rem;
 }
 
 .weeklyOff > input {
@@ -209,7 +209,7 @@
 
 .holiday {
   @include entry__wrapper;
-  margin-top: 0.5rem;;
+  margin-top: 0.5rem;
 }
 
 .holiday > input {
@@ -223,7 +223,7 @@
 
 .leave {
   @include entry__wrapper;
-  margin-top: 0.5rem;;
+  margin-top: 0.5rem;
 }
 
 .leave > input {
@@ -264,7 +264,7 @@
     color: color(headingColor);
   }
 
-  .unclassified__entries{
-    margin-top: 0.5rem;;
+  .unclassified__entries {
+    margin-top: 0.5rem;
   }
 }
